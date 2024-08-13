@@ -7,3 +7,9 @@ body,
 :root {
   height: 100%;
 }
+
+@layer components {
+  .main-container {
+    @apply w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
