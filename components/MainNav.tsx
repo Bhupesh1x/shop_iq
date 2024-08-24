@@ -16,9 +16,9 @@ export const MainNav = ({ data }: Props) => {
   const routes = useMemo(
     () =>
       data.map((route) => ({
-        href: `/category/${route.id}`,
+        href: `/categories/${route.id}`,
         label: route.name,
-        active: pathname === `/category/${route.id}`,
+        active: pathname === `/categories/${route.id}`,
       })),
     [data, pathname]
   );
