@@ -8,6 +8,7 @@ import { NoResults } from "@/components/NoResults";
 import { ProductCard } from "@/components/product/ProductCard";
 
 import { Filter } from "./_components/Filter";
+import { MobileFilters } from "./_components/MobileFilters";
 
 type Props = {
   params: { categoryId: string };
@@ -37,7 +38,8 @@ const CategoryPage = async ({ params, searchParams }: Props) => {
       </div>
       <div className="main-container space-y-4">
         <div className="lg:grid lg:grid-cols-5 gap-2 mt-8">
-          <div className="hidden md:block space-y-4">
+          <MobileFilters sizes={sizes} colors={colors} />
+          <div className="hidden lg:block space-y-4">
             <Filter valueKey="sizeId" name="Sizes" data={sizes} />
             <Filter valueKey="colorId" name="Colors" data={colors} />
           </div>

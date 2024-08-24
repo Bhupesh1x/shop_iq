@@ -51,7 +51,7 @@ export const Filter = ({ name, data, valueKey }: Props) => {
           <Button
             onClick={() => handleClick(filter.id)}
             key={filter.id}
-            className={`bg-white border border-gray-300 !text-gray-800 rounded-md text-sm p-2 ${
+            className={`bg-white border border-gray-400 !text-gray-800 rounded-md text-sm p-2 ${
               selectedValue === filter.id && "!bg-black !text-white"
             }`}
           >
